@@ -21,6 +21,8 @@ defmodule LightTouch.MixProject do
 
   # Run "mix help deps" to learn about dependencies.
   defp deps do
-    []
+    [
+      {:egd, github: "erlang/egd"}
+    ]
   end
 end

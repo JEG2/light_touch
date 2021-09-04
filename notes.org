@@ -1,0 +1,49 @@
+#+STARTUP: content
+
+* Ideas
+  :PROPERTIES:
+  :VISIBILITY: folded
+  :END:
+** Maybe use Nx for the core… eventually
+** Needs a very scalable deployment
+** Provide tools for finding drawn elements
+* Plan
+  :PROPERTIES:
+  :VISIBILITY: folded
+  :END:
+** Build a ray tracer:  Light Touch
+*** TODO Implement core functionality
+*** TODO Expand shapes and patterns
+*** TODO Optimize
+*** TODO Add animations
+** Setup deployment
+*** TODO Start a small, flexible deployment
+*** TODO Run time trials to gauge concurrency needs
+*** TODO Figure out how to scale up as quickly as possible
+** Build the web app interface:  Tracing Paper
+*** TODO Create individual, teacher, and student accounts
+*** TODO Support mass adding students
+*** TODO Build tracing UI
+*** TODO Build lesson UI
+*** TODO Build teacher overview
+*** TODO Create curriculum
+* Tasks
+** DONE Work through Chapter 1
+   CLOSED: [2021-08-29 Sun 10:24]
+** DONE Work through Chapter 2
+   CLOSED: [2021-09-04 Sat 16:54]
+** TODO Work through Chapter 3
+** TODO Work through Chapter 4
+** TODO Work through Chapter 5
+** TODO Work through Chapter 6
+** TODO Work through Chapter 7
+** TODO Work through Chapter 8
+** TODO Work through Chapter 9
+** TODO Work through Chapter 10
+** TODO Work through Chapter 11
+** TODO Work through Chapter 12
+** TODO Work through Chapter 13
+** TODO Work through Chapter 14
+** TODO Work through Chapter 15
+** TODO Work through Chapter 16
+** TODO Work through Chapter 17
