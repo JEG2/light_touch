@@ -15,7 +15,7 @@ defmodule LightTouch.Canvas do
             pixels: Map.new(),
             default_color: LightTouch.Primitives.color(0, 0, 0)
 
-  def new({width, height})
+  def new(width, height)
       when is_integer(width) and width > 0 and
              is_integer(height) and height > 0 do
     %__MODULE__{width: width, height: height}

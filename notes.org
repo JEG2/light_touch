@@ -36,7 +36,8 @@
    CLOSED: [2021-09-08 Wed 20:20]
 ** DONE Work through Chapter 4
    CLOSED: [2021-09-10 Fri 16:27]
-** TODO Work through Chapter 5
+** DONE Work through Chapter 5
+   CLOSED: [2021-09-11 Sat 14:56]
 ** TODO Work through Chapter 6
 ** TODO Work through Chapter 7
 ** TODO Work through Chapter 8

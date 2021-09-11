@@ -173,7 +173,7 @@ defmodule LightTouch.TransformationsTest do
       assert close_to(translated, Primitives.point(15, 0, 7))
 
       transformation =
-        Transformations.transform(
+        Transformations.combine(
           rotate_x: 90,
           scale: [5, 5, 5],
           translate: [10, 5, 7]

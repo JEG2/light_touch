@@ -40,13 +40,13 @@ defmodule LightTouch.CanvasTest do
     test "has a width and height" do
       width = 20
       height = 10
-      canvas = Canvas.new({width, height})
+      canvas = Canvas.new(width, height)
       assert canvas.width == width
       assert canvas.height == height
     end
 
     test "defaults pixels to black" do
-      canvas = Canvas.new({20, 10})
+      canvas = Canvas.new(20, 10)
       black = Primitives.color(0, 0, 0)
 
       Enum.each(0..9, fn y ->
@@ -59,7 +59,7 @@ defmodule LightTouch.CanvasTest do
 
     test "supports drawing pixels" do
       red = Primitives.color(1, 0, 0)
-      canvas = Canvas.new({20, 10}) |> Canvas.draw({2, 3}, red)
+      canvas = Canvas.new(20, 10) |> Canvas.draw({2, 3}, red)
       drawn = Canvas.view(canvas, {2, 3})
 
       assert close_to(drawn, red)
@@ -73,7 +73,7 @@ defmodule LightTouch.CanvasTest do
 
     test "writes PNG files" do
       canvas =
-        Canvas.new({5, 3})
+        Canvas.new(5, 3)
         |> Canvas.draw({0, 0}, Primitives.color(1.5, 0, 0))
         |> Canvas.draw({2, 1}, Primitives.color(0, 0.5, 0))
         |> Canvas.draw({4, 2}, Primitives.color(-0.5, 0, 1))

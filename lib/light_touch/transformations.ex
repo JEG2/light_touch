@@ -58,10 +58,10 @@ defmodule LightTouch.Transformations do
     }
   end
 
-  def transform(transformations) do
+  def combine(initial \\ Primitives.identity_matrix(), transformations) do
     Enum.reduce(
       transformations,
-      Primitives.identity_matrix(),
+      initial,
       fn {f, args}, combined ->
         __MODULE__
         |> apply(f, List.wrap(args))

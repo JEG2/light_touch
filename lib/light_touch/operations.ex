@@ -4,7 +4,7 @@ defmodule LightTouch.Operations do
   def add({lr, lg, lb}, {rr, rg, rb}), do: {lr + rr, lg + rg, lb + rb}
 
   def add({lx, ly, lz, lw}, {rx, ry, rz, rw})
-      when lw in [0, 1] and rw in [0, 1] and lw + rw != 2 do
+      when (lw == 0 or lw == 1) and (rw == 0 or rw == 1) and lw + rw != 2 do
     {lx + rx, ly + ry, lz + rz, lw + rw}
   end
 
@@ -95,7 +95,8 @@ defmodule LightTouch.Operations do
 
   def divide({x, y, z, 0}, n) when is_number(n), do: {x / n, y / n, z / n, 0}
 
-  def dot_product({lx, ly, lz, 0}, {rx, ry, rz, 0}) do
+  def dot_product({lx, ly, lz, lw}, {rx, ry, rz, rw})
+      when lw == 0 and rw == 0 do
     lx * rx + ly * ry + lz * rz
   end
 
@@ -310,7 +311,7 @@ defmodule LightTouch.Operations do
   def subtract({lr, lg, lb}, {rr, rg, rb}), do: {lr - rr, lg - rg, lb - rb}
 
   def subtract({lx, ly, lz, lw}, {rx, ry, rz, rw})
-      when lw in [0, 1] and rw in [0, 1] and lw + rw != -1 do
+      when (lw == 0 or lw == 1) and (rw == 0 or rw == 1) and lw - rw != -1 do
     {lx - rx, ly - ry, lz - rz, lw - rw}
   end
 
